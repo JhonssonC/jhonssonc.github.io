@@ -30,7 +30,7 @@ twitter_username: jhonssonc
 github_username:  JhonssonC
 
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-cayman
 exclude: [vendor]
 
 # Build settings
