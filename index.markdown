@@ -5,7 +5,7 @@
 layout: default
 ---
 * Ingeniero de sistemas Ecuatoriano. 
-* 9na promoción de la Universidad Tecnica de Machala. [...](https://i.imgur.com/dbhydtt.png "Registro de Titulo de Ingeniero de sistemas")
+* 9na promoción de la Universidad Tecnica de Machala. [...](/registrotitulacion/ "Registro de Titulo de Ingeniero de sistemas")
 * Apasionado por el codigo y automatización de procesos.
 * Desarrollador.
 * Autodidacta.
