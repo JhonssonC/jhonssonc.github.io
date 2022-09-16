@@ -18,6 +18,47 @@ layout: default
 * Always interested in areas of Technology, Development, Self-Learning and Self-Discovery.
 
 
+  **Achievements:**
+
+   - Public Projects (Repositories)
+
+     - Query with macro [...repo...](https://github.com/JhonssonC/querywithODBCISeriesAccessVBA "Repository")
+     - Program/terminal control with excel macro [...repo...](https://github.com/JhonssonC/controlPCISeriesAfromExcel "Repository")
+     - Obtaining coordinates from the web [...repo...](https://github.com/JhonssonC/coordsFromGeoportaltoExcel "Repository")
+     - Coordinate transformation with excel macro [...repo...](https://github.com/JhonssonC/transfCoordExcelUTMLtLn "Repository")
+     - Download Photos/Images with Excel Macro [...repo...](https://github.com/JhonssonC/downloadPhotosWithExcel "Repository")
+
+   - Private Projects and Automations
+
+     - Implementer of customized solutions:
+      - Development and implementation of ConielApp application for Android V3+ operating system
+      - Development and implementation of Rest api with Django to find read path of a UTM coordinate consumed through Excel for quick read path determination of new clients.
+      - Web scraping with selenium to obtain existing client coordinates in the CNEL Geoportal.
+      - Web scraping with selenium for data collection and manipulation of Aciiss Web Platform - CNEL.
+      - Development and implementation of custom forms for gathering information in the field with the Memento Database app.
+      - Development and implementation of the rest service to obtain customer data from CNEL EP (El Oro and Manabí) to terminals using the Memento Database app (real-time verification support).
+      - Development and implementation of forms for Revisions of massive measurement systems.
+      - Development and implementation of forms for installation of energy totalizers.
+      - Development and implementation of forms for network reading taking.
+      - Development and implementation of a facility for calculating losses in electric power networks from readings of network meters and totalizers.
+
+
+     - Process automation (Responsible for providing services for automation).
+
+      - Attention of Requests oriented to the control of non-technical energy losses,
+      - Revisions of massive measurement systems,
+      - Installation of energy totalizers
+      - Network reading taking
+      - Calculation of losses by electric power networks
+      - Development and implementation of custom solutions using Processmaker Community edition, JQuery, IBM Personal Communications API Client and VBA Excel
+
+     - Macros in Excel for automated system control. Linked with RestFramework/Django.
+       - VBA (Visual Basque for Applications).
+     - Access (migrate data from Geodatabase to Access Database) / Queries from Excel of coordinates of clients migrated from Geodatabase to Acess.
+     - Web scraping (From Services REST Geoportal and ArcGis Services Web). / Consultation through Macro VBA customer coordinates
+     - IClient Access (IBM) (Control of the terminal and execution of repetitive processes to obtain data). / Terminal control with VBA and Python(pywin32)
+
+
 **Experience:** [...show...](/res/iess "Social Security Certificate")
 
   Systems Engineer & Software Engineer  
@@ -77,49 +118,4 @@ layout: default
    - JQuery.
    - Sqlite3.
    - Postgresql.
-
-
-
-  **Achievements:**
-
-
-   - Private Projects and Automations
-
-     - Implementer of customized solutions:
-      - Development and implementation of ConielApp application for Android V3+ operating system
-      - Development and implementation of Rest api with Django to find read path of a UTM coordinate consumed through Excel for quick read path determination of new clients.
-      - Web scraping with selenium to obtain existing client coordinates in the CNEL Geoportal.
-      - Web scraping with selenium for data collection and manipulation of Aciiss Web Platform - CNEL.
-      - Development and implementation of custom forms for gathering information in the field with the Memento Database app.
-      - Development and implementation of the rest service to obtain customer data from CNEL EP (El Oro and Manabí) to terminals using the Memento Database app (real-time verification support).
-      - Development and implementation of forms for Revisions of massive measurement systems.
-      - Development and implementation of forms for installation of energy totalizers.
-      - Development and implementation of forms for network reading taking.
-      - Development and implementation of a facility for calculating losses in electric power networks from readings of network meters and totalizers.
-
-
-     - Process automation (Responsible for providing services for automation).
-
-      - Attention of Requests oriented to the control of non-technical energy losses,
-      - Revisions of massive measurement systems,
-      - Installation of energy totalizers
-      - Network reading taking
-      - Calculation of losses by electric power networks
-      - Development and implementation of custom solutions using Processmaker Community edition, JQuery, IBM Personal Communications API Client and VBA Excel
-
-     - Macros in Excel for automated system control. Linked with RestFramework/Django.
-       - VBA (Visual Basque for Applications).
-     - Access (migrate data from Geodatabase to Access Database) / Queries from Excel of coordinates of clients migrated from Geodatabase to Acess.
-     - Web scraping (From Services REST Geoportal and ArcGis Services Web). / Consultation through Macro VBA customer coordinates
-     - IClient Access (IBM) (Control of the terminal and execution of repetitive processes to obtain data). / Terminal control with VBA and Python(pywin32)
-
-   - Public Projects (Repositories)
-
-     - Query with macro [...repo...](https://github.com/JhonssonC/querywithODBCISeriesAccessVBA "Repository")
-     - Program/terminal control with excel macro [...repo...](https://github.com/JhonssonC/controlPCISeriesAfromExcel "Repository")
-     - Obtaining coordinates from the web [...repo...](https://github.com/JhonssonC/coordsFromGeoportaltoExcel "Repository")
-     - Coordinate transformation with excel macro [...repo...](https://github.com/JhonssonC/transfCoordExcelUTMLtLn "Repository")
-     - Download Photos/Images with Excel Macro [...repo...](https://github.com/JhonssonC/downloadPhotosWithExcel "Repository")
-
-
 
