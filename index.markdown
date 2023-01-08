@@ -20,14 +20,6 @@ layout: default
 
   **Achievements:**
 
-   - Public Projects (Repositories)
-
-     - Query with macro [...repo...](https://github.com/JhonssonC/querywithODBCISeriesAccessVBA "Repository")
-     - Program/terminal control with excel macro [...repo...](https://github.com/JhonssonC/controlPCISeriesAfromExcel "Repository")
-     - Obtaining coordinates from the web [...repo...](https://github.com/JhonssonC/coordsFromGeoportaltoExcel "Repository")
-     - Coordinate transformation with excel macro [...repo...](https://github.com/JhonssonC/transfCoordExcelUTMLtLn "Repository")
-     - Download Photos/Images with Excel Macro [...repo...](https://github.com/JhonssonC/downloadPhotosWithExcel "Repository")
-
    - Private Projects and Automations
 
      - Implementer of customized solutions:
@@ -57,6 +49,15 @@ layout: default
      - Access (migrate data from Geodatabase to Access Database) / Queries from Excel of coordinates of clients migrated from Geodatabase to Acess.
      - Web scraping (From Services REST Geoportal and ArcGis Services Web). / Consultation through Macro VBA customer coordinates
      - IClient Access (IBM) (Control of the terminal and execution of repetitive processes to obtain data). / Terminal control with VBA and Python(pywin32)
+
+
+   - Public Projects (Repositories)
+
+     - Query with macro [...repo...](https://github.com/JhonssonC/querywithODBCISeriesAccessVBA "Repository")
+     - Program/terminal control with excel macro [...repo...](https://github.com/JhonssonC/controlPCISeriesAfromExcel "Repository")
+     - Obtaining coordinates from the web [...repo...](https://github.com/JhonssonC/coordsFromGeoportaltoExcel "Repository")
+     - Coordinate transformation with excel macro [...repo...](https://github.com/JhonssonC/transfCoordExcelUTMLtLn "Repository")
+     - Download Photos/Images with Excel Macro [...repo...](https://github.com/JhonssonC/downloadPhotosWithExcel "Repository")
 
 
 **Experience:** [...show...](/res/iess "Social Security Certificate")
