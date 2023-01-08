@@ -21,15 +21,6 @@ layout: default
 
   **Logros**:
 
-   - Proyectos Públicos (Repositorios)
-
-     - Querys con macro  [...repo...](https://github.com/JhonssonC/querywithODBCISeriesAccessVBA "Repositorio")
-     - Control de programa/terminal con macro excel  [...repo...](https://github.com/JhonssonC/controlPCISeriesAfromExcel "Repositorio")
-     - Obtencion de coordenadas desde la web  [...repo...](https://github.com/JhonssonC/coordsFromGeoportaltoExcel "Repositorio")
-     - Transformacion de coordenas con macro excel  [...repo...](https://github.com/JhonssonC/transfCoordExcelUTMLtLn "Repositorio")
-     - Descargar Fotos/Imagenes con Macro Excel  [...repo...](https://github.com/JhonssonC/downloadPhotosWithExcel "Repositorio")
-
-
    - Proyectos Privados y Automatizaciones
 
      - Implementador de soluciones a la medida:
@@ -59,6 +50,14 @@ layout: default
      - Access (migrate data from Geodatabase to Access Database) / Consultas desde Excel de coordenadas de clientes migrados de Geodatabase a Acess.
      - Web scraping (From Services REST Geoportal and ArcGis Services Web). / Consulta mediante Macro VBA coordenadas de clientes
      - IClient Access (IBM) (Control del terminal y ejecucion de procesos repetitivos para obtencion de datos). / Control de Terminal con VBA y Python(pywin32)
+
+   - Proyectos Públicos (Repositorios)
+
+     - Querys con macro  [...repo...](https://github.com/JhonssonC/querywithODBCISeriesAccessVBA "Repositorio")
+     - Control de programa/terminal con macro excel  [...repo...](https://github.com/JhonssonC/controlPCISeriesAfromExcel "Repositorio")
+     - Obtencion de coordenadas desde la web  [...repo...](https://github.com/JhonssonC/coordsFromGeoportaltoExcel "Repositorio")
+     - Transformacion de coordenas con macro excel  [...repo...](https://github.com/JhonssonC/transfCoordExcelUTMLtLn "Repositorio")
+     - Descargar Fotos/Imagenes con Macro Excel  [...repo...](https://github.com/JhonssonC/downloadPhotosWithExcel "Repositorio")
 
 
 **Experiencia:** [...ver...](/res/iess "Certificado de Seguridad Social")
