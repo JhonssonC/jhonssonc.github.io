@@ -4,13 +4,460 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JhonssonC</title>
+    <title>Jhonsson Córdova Dávila | Portfolio & Observability CV</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Sitio Web de JhonssonC para Github Pages</h1>
-    <p>Esta sitio fué creado con amor para el curso de Git y Github de Platzi como una prueba inicial.</p>
 
-    <p><img src="https://i.imgur.com/YG0J3eL.jpeg" width="100%"></p>
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Jhonsson.dev</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-translate="nav_about">Sobre mí</a></li>
+                <li><a href="#skills" data-translate="nav_skills">Habilidades</a></li>
+                <li><a href="#experience" data-translate="nav_experience">Experiencia</a></li>
+                <li><a href="#education" data-translate="nav_education">Educación</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle-btn">
+                    <i class="fas fa-globe"></i>
+                    <span>English (EN)</span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section with Observability Dashboard -->
+    <section class="hero" id="about">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h4 data-translate="hero_tag">INGENIERO DE SISTEMAS & OBSERVABILIDAD</h4>
+                <h1>Jhonsson Córdova</h1>
+                <p class="lead" data-translate="hero_lead">
+                    Ingeniero de Sistemas con más de 10 años de experiencia especializado en desarrollo backend (Python/Django/Odoo), observabilidad a gran escala (Datadog/AppDynamics) y automatización de procesos (RPA). Apasionado por la eficiencia operativa y la automatización inteligente.
+                </p>
+                <div class="hero-btns">
+                    <!-- Download CV Button links to the generated Spanish Word CV by default -->
+                    <a href="Jhonsson_Cordova_CV_Espanol.docx" class="btn btn-primary" id="cv-download-btn" download>
+                        <i class="fas fa-file-word"></i> 
+                        <span data-translate="btn_cv">Descargar CV (Word)</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" data-translate="btn_contact">Contáctame</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jhonsson-cordova-d/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/jhonssonc" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.credly.com/users/jhonssoncordovad" target="_blank" class="social-icon"><i class="fas fa-award"></i></a>
+                    <a href="mailto:ionszon1806@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Observability Widget -->
+            <div class="glass obs-dashboard">
+                <div class="obs-header">
+                    <h3 data-translate="dashboard_title">Tablero de Observabilidad del CV</h3>
+                    <div class="obs-status">
+                        <span class="pulse-led"></span>
+                        <span>LIVE</span>
+                    </div>
+                </div>
+
+                <div class="obs-tabs">
+                    <button class="obs-tab active" data-panel="panel-system" data-translate="tab_system">Sistema</button>
+                    <button class="obs-tab" data-panel="panel-traces" data-translate="tab_traces">Trazas APM</button>
+                    <button class="obs-tab" data-panel="panel-logs" data-translate="tab_logs">Registros RPA</button>
+                </div>
+
+                <!-- Panel 1: System Metrics -->
+                <div class="obs-panel active" id="panel-system">
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <h5 data-translate="metric_uptime">Disponibilidad</h5>
+                            <div class="metric-value cyan-text" id="metric-uptime-val">99.9999%</div>
+                            <div class="metric-desc">Service Level Objective (SLO)</div>
+                        </div>
+                        <div class="metric-card">
+                            <h5 data-translate="metric_latency">Latencia Promedio</h5>
+                            <div class="metric-value" id="metric-latency-val">124ms</div>
+                            <div class="metric-desc">API endpoints response</div>
+                        </div>
+                        <div class="metric-card">
+                            <h5 data-translate="metric_cpu">Carga CPU</h5>
+                            <div class="metric-value purple-text" id="metric-cpu-val">12%</div>
+                            <div class="metric-desc">Odoo & Scrapers active load</div>
+                        </div>
+                        <div class="metric-card">
+                            <h5 data-translate="metric_saved">Tiempo Ahorrado (RPA)</h5>
+                            <div class="metric-value" style="color: var(--success)">80%</div>
+                            <div class="metric-desc">AS400 Typing processes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: APM Traces Mock -->
+                <div class="obs-panel" id="panel-traces">
+                    <div class="apm-trace-list">
+                        <div class="apm-trace-item">
+                            <div class="trace-left">
+                                <span class="trace-path">GET /api/v1/balances-energy</span>
+                                <span class="trace-service">Odoo 15 Balance Engine</span>
+                            </div>
+                            <div class="trace-right">
+                                <span class="trace-status">200 OK</span>
+                                <div class="trace-time">82ms</div>
+                            </div>
+                        </div>
+                        <div class="apm-trace-item">
+                            <div class="trace-left">
+                                <span class="trace-path">POST /api/v1/cnel-geoportal/scrape</span>
+                                <span class="trace-service">Selenium Scraper Agent</span>
+                            </div>
+                            <div class="trace-right">
+                                <span class="trace-status">200 OK</span>
+                                <div class="trace-time">145ms</div>
+                            </div>
+                        </div>
+                        <div class="apm-trace-item">
+                            <div class="trace-left">
+                                <span class="trace-path">PUT /api/v1/as400-rpa/sync</span>
+                                <span class="trace-service">IBM Terminal Emulator API</span>
+                            </div>
+                            <div class="trace-right">
+                                <span class="trace-status">200 OK</span>
+                                <div class="trace-time">240ms</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: RPA Logs Mock -->
+                <div class="obs-panel" id="panel-logs">
+                    <div class="console-log" id="console-log-lines">
+                        <div class="console-line info">[14:30:00] Iniciando conexión a terminal AS400 vía API...</div>
+                        <div class="console-line success">[14:30:02] Conexión establecida. Sesión ID: 48A8B1</div>
+                        <div class="console-line accent">[14:30:05] Consultando base de datos Odoo 15 para balances de energía...</div>
+                        <div class="console-line success">[14:30:08] Motor de cálculo de pérdidas ejecutado con éxito. 0 anomalías encontradas.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-translate="sec_skills">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <!-- Card 1: Backend & Frameworks -->
+                <div class="glass skill-category-card">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">Python & Django</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="95"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">Odoo (ERP)</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="80"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">Java & OOP</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="70"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Observability & DevOps -->
+                <div class="glass skill-category-card">
+                    <h3><i class="fas fa-chart-line"></i> Observabilidad</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">Datadog</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="90"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">AppDynamics</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="85"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">Docker & Containers</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="75"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: RPA & Scraping -->
+                <div class="glass skill-category-card">
+                    <h3><i class="fas fa-robot"></i> Automatización</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">Selenium (Web Scraping)</span>
+                                <span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="95"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">IBM Personal Comm API</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="90"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-name-row">
+                                <span class="skill-name">JavaScript & jQuery</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-pct="85"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title" data-translate="sec_experience">Experiencia Profesional</h2>
+            <div class="timeline">
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-role" data-translate="job_atdac_role">Desarrollador Python e Ingeniero de Observabilidad</h3>
+                                <div class="job-company">ATDAC</div>
+                            </div>
+                            <span class="job-date">Oct 2023 - Presente</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li data-translate="job_atdac_desc1">Despliegue y optimización de soluciones de monitoreo Full-Stack (Datadog, AppDynamics) en entornos corporativos.</li>
+                            <li data-translate="job_atdac_desc2">Desarrollo de scripts en Python para recopilación e ingesta de métricas personalizadas a través de APIs de Datadog.</li>
+                            <li data-translate="job_atdac_desc3">Diseño de dashboards analíticos de rendimiento (APM) para reducir el tiempo medio de resolución (MTTR).</li>
+                            <li data-translate="job_atdac_desc4">Ajuste fino de perfiles de diagnóstico y umbrales de alerta para evitar alertas falsas.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag datadog">Datadog</span>
+                            <span class="tech-tag">AppDynamics</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">APM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-role" data-translate="job_balances_role">Ingeniero de Sistemas y de Software</h3>
+                                <div class="job-company">Consorcio Balances El Oro</div>
+                            </div>
+                            <span class="job-date">Dic 2022 - Jun 2023</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li data-translate="job_balances_desc1">Implementación de servidores de Odoo 15 para balances de energía en entornos de prueba y producción.</li>
+                            <li data-translate="job_balances_desc2">Desarrollo del motor de cálculo de pérdidas eléctricas en Python mediante consolidación de lecturas de red.</li>
+                            <li data-translate="job_balances_desc3">Creación de pasarelas REST API para integrar datos de consumo en campo con Odoo.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag odoo">Odoo 15</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag django">Django</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-role" data-translate="job_consorcios1_role">Ingeniero de Sistemas y de Software</h3>
+                                <div class="job-company">Consorcios: El Oro, CVL, Zona Uno, Zona Dos</div>
+                            </div>
+                            <span class="job-date">Oct 2018 - Oct 2022</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li data-translate="job_consorcios1_desc1">Diseño y programación de bots de escritorio (RPA) en Python con la API de IBM Personal Communications.</li>
+                            <li data-translate="job_consorcios1_desc2:">Aumento del 80% en el rendimiento de registro al automatizar digitación masiva en terminales AS400.</li>
+                            <li data-translate="job_consorcios1_desc3">Construcción de portales administrativos con Django y Django REST Framework para auditorías y carga de datos.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">IBM API</span>
+                            <span class="tech-tag django">Django</span>
+                            <span class="tech-tag">RPA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-role" data-translate="job_consorcios2_role">Ingeniero de Sistemas y de Software</h3>
+                                <div class="job-company">Consorcios: Reducción de Pérdidas Sec. 2 & Pérdidas Manta</div>
+                            </div>
+                            <span class="job-date">Mar 2019 - Abr 2020</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li data-translate="job_consorcios2_desc1">Automatización de workflows operativos con ProcessMaker BPM para control de pérdidas no técnicas de energía.</li>
+                            <li data-translate="job_consorcios2_desc2">Integración frontend con JavaScript y jQuery de formularios ProcessMaker con sistemas comerciales AS400.</li>
+                            <li data-translate="job_consorcios2_desc3">Análisis estadístico de consumo eléctrico para identificación de anomalías y fraude.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">ProcessMaker</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">AS400</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="glass timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="job-role" data-translate="job_coniel_role">Ingeniero de Sistemas y de Software</h3>
+                                <div class="job-company">CONIEL CIA. LTDA.</div>
+                            </div>
+                            <span class="job-date">Jul 2013 - Jun 2020</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li data-translate="job_coniel_desc1">Desarrollo de crawlers en Selenium para extraer coordenadas de clientes en CNEL EP Geoportal.</li>
+                            <li data-translate="job_coniel_desc2">Diseño e implementación de ConielApp (Android nativo / Java) para lecturas de medidor sin conexión y GPS.</li>
+                            <li data-translate="job_coniel_desc3">Sincronización de base de datos móvil con API Django mediante carga en lotes JSON.</li>
+                            <li data-translate="job_coniel_desc4">Desarrollo de algoritmo de ordenamiento de lecturas con Django y pandas para secuenciar rutas de campo.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Android / Java</span>
+                            <span class="tech-tag django">Django</span>
+                            <span class="tech-tag">Web Scraping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-translate="sec_education">Educación & Certificaciones</h2>
+            <div class="edu-grid">
+                <!-- UTM Degree -->
+                <div class="glass edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-details">
+                        <h3 data-translate="edu_utm">Ingeniero de Sistemas / Software</h3>
+                        <p class="institution">Universidad Técnica de Machala</p>
+                        <p class="date">2009 - 2015</p>
+                    </div>
+                </div>
+                
+                <!-- Platzi -->
+                <div class="glass edu-card">
+                    <div class="edu-icon"><i class="fas fa-book-reader"></i></div>
+                    <div class="edu-details">
+                        <h3 data-translate="edu_platzi">Aprendizaje Continuo (Backend & DevOps)</h3>
+                        <p class="institution">Platzi</p>
+                        <p class="date">Ene 2022 - Presente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="glass contact-box">
+                <h2 data-translate="sec_contact">Información de Contacto</h2>
+                <p data-translate="contact_lead">¿Quieres trabajar juntos o tienes alguna pregunta? ¡Escríbeme!</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>ionszon1806@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+593 996155789</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-translate="contact_loc">Ubicación</span>
+                        <span style="font-weight: 400; color: var(--text-secondary);">El Oro, Ecuador</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-award"></i>
+                        <span>Credly Badges</span>
+                        <a href="https://www.credly.com/users/jhonssoncordovad" target="_blank" style="font-size: 0.8rem; color: var(--accent);" data-translate="edu_credly">Ver credenciales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-translate="footer_text">Diseñado con ❤️ por Jhonsson Córdova. © 2026. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script imports -->
+    <script src="script.js"></script>
 </body>
 </html>
